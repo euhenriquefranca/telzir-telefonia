@@ -14,206 +14,268 @@ const faleMais = function () {
 
   if (origem == 11 && destino == 16) {
     if (plano == 30) {
-      if (tempo <= plano) {
-        return alert(tempo * 1.9);
-      } else if (tempo >= 80) {
-        return parseInt(alert(2.09 * (tempo - plano)));
+      if (tempo <= 30) {
+        let comFaleMais = 'Valor da ligação com o plano é ' + ((0).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
+      } else if (tempo >= 30) {
+        let = comFaleMais = ('Você excedeu os minutos do seu plano (acréscimo de 10% sobre a tarifa normal do minuto). O valor da ligação COM O PLANO FaleMais é ' + (2.09 * (tempo - plano)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       }
+      return comFaleMais;
     }
 
     // calculo sem o plano
     if (plano == 1) {
       if (tempo >= 20) {
-        return parseInt(alert(tempo * 1.9));
+        let semFalemais = 'Valor da ligação sem o plano FaleMais é ' + ((tempo * 1.9)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+        return semFalemais;
       }
     }
     // plano FaleMais 60
     if (plano == 60) {
-      if (tempo >= 60) {
-        return parseInt(alert(2.09 * (tempo - plano)));
+      if (tempo <= 60) {
+        let comFaleMais = 'Valor da ligação com o plano é ' + ((0).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
+      } else if (tempo >= 60) {
+        let = comFaleMais = ('Você excedeu os minutos do seu plano (acréscimo de 10% sobre a tarifa normal do minuto). O valor da ligação COM O PLANO FaleMais é ' + (2.09 * (tempo - plano)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       }
+      return comFaleMais;
     }
     // plano FaleMais 120
     if (plano == 120) {
-      if (tempo >= 120) {
-        return parseInt(alert(2.09 * (tempo - plano)));
-      } else if (tempo <= 120) {
-        return alert("você não excedeu os minutos do seu plano");
+      if (tempo <= 120) {
+        let comFaleMais = 'Valor da ligação com o plano é ' + ((0).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
+      } else if (tempo >= 120) {
+        let = comFaleMais = ('Você excedeu os minutos do seu plano (acréscimo de 10% sobre a tarifa normal do minuto). O valor da ligação COM O PLANO FaleMais é ' + (2.09 * (tempo - plano)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       }
+      return comFaleMais;
     }
   }
   if (origem == 16 && destino == 11) {
     // plano FaleMais 30
     if (plano == 30) {
-      if (tempo <= plano) {
-        return alert("você não excedeu os minutos do seu plano");
+      if (tempo <= 30) {
+        let comFaleMais = 'Valor da ligação com o plano é ' + ((0).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       } else if (tempo >= 30) {
-        return parseInt(alert(Math.round(3.19 * (tempo - plano))));
+        let = comFaleMais = ('Você excedeu os minutos do seu plano (acréscimo de 10% sobre a tarifa normal do minuto). O valor da ligação COM O PLANO FaleMais é ' + (3.19 * (tempo - plano)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       }
+      return comFaleMais;
     }
 
     // plano FaleMais 60
     if (plano == 60) {
-      if (tempo <= plano) {
-        return alert("você não excedeu os minutos do seu plano");
+      if (tempo <= 60) {
+        let comFaleMais = 'Valor da ligação com o plano é ' + ((0).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       } else if (tempo >= 60) {
-        return parseInt(alert(3.19 * (tempo - plano)));
+        let = comFaleMais = ('Você excedeu os minutos do seu plano (acréscimo de 10% sobre a tarifa normal do minuto). O valor da ligação COM O PLANO FaleMais é ' + (3.19 * (tempo - plano)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       }
+      return comFaleMais;
     }
     // plano FaleMais 120
     if (plano == 120) {
-      if (tempo <= plano) {
-        return alert("você não excedeu os minutos do seu plano");
+      if (tempo <= 120) {
+        let comFaleMais = 'Valor da ligação com o plano é ' + ((0).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       } else if (tempo >= 120) {
-        return parseInt(alert(3.19 * (tempo - plano)));
+        let = comFaleMais = ('Você excedeu os minutos do seu plano (acréscimo de 10% sobre a tarifa normal do minuto). O valor da ligação COM O PLANO FaleMais é ' + (3.19 * (tempo - plano)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       }
+      return comFaleMais;
     }
 
     // calculo sem o plano
     if (plano == 1) {
       if (tempo >= 20) {
-        return parseInt(alert(tempo * 2.9));
+        let semFalemais = 'Valor da ligação sem o plano FaleMais é ' + ((tempo * 3.19)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+        return semFalemais;
       }
     }
   }
   if (origem == 11 && destino == 17) {
     // plano FaleMais 30
     if (plano == 30) {
-      if (tempo <= plano) {
-        return alert("você não excedeu os minutos do seu plano");
+      if (tempo <= 30) {
+        let comFaleMais = 'Valor da ligação com o plano é ' + ((0).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       } else if (tempo >= 30) {
-        return parseIntd(alert(1.87 * (tempo - plano)));
+        let = comFaleMais = ('Você excedeu os minutos do seu plano (acréscimo de 10% sobre a tarifa normal do minuto). O valor da ligação COM O PLANO FaleMais é ' + (1.87 * (tempo - plano)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       }
+      return comFaleMais;
     }
 
     // plano FaleMais 60
     if (plano == 60) {
-      if (tempo <= plano) {
-        return alert("você não excedeu os minutos do seu plano");
+      if (tempo <= 60) {
+        let comFaleMais = 'Valor da ligação com o plano é ' + ((0).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       } else if (tempo >= 60) {
-        return parseInt(alert(((tempo - plano) * 1.87).toFixed(2)));
+        let = comFaleMais = ('Você excedeu os minutos do seu plano (acréscimo de 10% sobre a tarifa normal do minuto). O valor da ligação COM O PLANO FaleMais é ' + (1.87 * (tempo - plano)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       }
+      return comFaleMais;
     }
     // plano FaleMais 120
     if (plano == 120) {
-      if (tempo <= plano) {
-        return alert("você não excedeu os minutos do seu plano");
+      if (tempo <= 120) {
+        let comFaleMais = 'Valor da ligação com o plano é ' + ((0).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       } else if (tempo >= 120) {
-        return parseInt(alert(1.87 * (tempo - plano)));
+        let = comFaleMais = ('Você excedeu os minutos do seu plano (acréscimo de 10% sobre a tarifa normal do minuto). O valor da ligação COM O PLANO FaleMais é ' + (1.87 * (tempo - plano)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       }
+      return comFaleMais;
     }
 
     // calculo sem o plano
     if (plano == 1) {
       if (tempo >= 20) {
-        return parseInt(alert((tempo * 1.7).toFixed(2)));
+        let semFalemais = 'Valor da ligação sem o plano FaleMais é ' + ((tempo * 1.87)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+        return semFalemais;
       }
     }
   }
   if (origem == 17 && destino == 11) {
     // plano FaleMais 30
     if (plano == 30) {
-      if (tempo <= plano) {
-        return alert("você não excedeu os minutos do seu plano");
+      if (tempo <= 30) {
+        let comFaleMais = 'Valor da ligação com o plano é ' + ((0).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       } else if (tempo >= 30) {
-        return parseInt(alert(2.97 * (tempo - plano)));
+        let = comFaleMais = ('Você excedeu os minutos do seu plano (acréscimo de 10% sobre a tarifa normal do minuto). O valor da ligação COM O PLANO FaleMais é ' + (2.97 * (tempo - plano)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       }
+      return comFaleMais;
     }
 
     // plano FaleMais 60
     if (plano == 60) {
-      if (tempo <= plano) {
-        return alert("você não excedeu os minutos do seu plano");
+      if (tempo <= 60) {
+        let comFaleMais = 'Valor da ligação com o plano é ' + ((0).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       } else if (tempo >= 60) {
-        return parseInt(alert(2.97 * (tempo - plano)));
+        let = comFaleMais = ('Você excedeu os minutos do seu plano (acréscimo de 10% sobre a tarifa normal do minuto). O valor da ligação COM O PLANO FaleMais é ' + (2.97 * (tempo - plano)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       }
+      return comFaleMais;
     }
     // plano FaleMais 120
     if (plano == 120) {
-      if (tempo <= plano) {
-        return alert("você não excedeu os minutos do seu plano");
+      if (tempo <= 120) {
+        let comFaleMais = 'Valor da ligação com o plano é ' + ((0).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       } else if (tempo >= 120) {
-        return parseInt(alert(2.97 * (tempo - plano)));
+        let = comFaleMais = ('Você excedeu os minutos do seu plano (acréscimo de 10% sobre a tarifa normal do minuto). O valor da ligação COM O PLANO FaleMais é ' + (2.97 * (tempo - plano)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       }
+      return comFaleMais;
     }
 
     // calculo sem o plano
     if (plano == 1) {
       if (tempo >= 20) {
-        return parseInt(alert(tempo * 2.7));
+        let semFalemais = 'Valor da ligação sem o plano FaleMais é ' + ((tempo * 2.97)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+        return semFalemais;
       }
     }
   }
   if (origem == 11 && destino == 18) {
     // plano FaleMais 30
     if (plano == 30) {
-      if (tempo <= plano) {
-        return alert("você não excedeu os minutos do seu plano");
+      if (tempo <= 30) {
+        let comFaleMais = 'Valor da ligação com o plano é ' + ((0).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       } else if (tempo >= 30) {
-        return parseInt(alert(0.99 * (tempo - plano)));
+        let = comFaleMais = ('Você excedeu os minutos do seu plano (acréscimo de 10% sobre a tarifa normal do minuto). O valor da ligação COM O PLANO FaleMais é ' + (0.99 * (tempo - plano)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       }
+      return comFaleMais;
     }
 
     // plano FaleMais 60
     if (plano == 60) {
-      if (tempo <= plano) {
-        return alert("você não excedeu os minutos do seu plano");
+      if (tempo <= 60) {
+        let comFaleMais = 'Valor da ligação com o plano é ' + ((0).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       } else if (tempo >= 60) {
-        return parseInt(alert(0.99 * (tempo - plano)));
+        let = comFaleMais = ('Você excedeu os minutos do seu plano (acréscimo de 10% sobre a tarifa normal do minuto). O valor da ligação COM O PLANO FaleMais é ' + (0.99 * (tempo - plano)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       }
+      return comFaleMais;
     }
     // plano FaleMais 120
     if (plano == 120) {
-      if (tempo <= plano) {
-        return alert("você não excedeu os minutos do seu plano");
+      if (tempo <= 120) {
+        let comFaleMais = 'Valor da ligação com o plano é ' + ((0).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       } else if (tempo >= 120) {
-        return parseInt(alert(0.99 * (tempo - plano)));
+        let = comFaleMais = ('Você excedeu os minutos do seu plano (acréscimo de 10% sobre a tarifa normal do minuto). O valor da ligação COM O PLANO FaleMais é ' + (0.99 * (tempo - plano)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       }
+      return comFaleMais;
     }
 
     // calculo sem o plano
     if (plano == 1) {
       if (tempo >= 20) {
-        return parseInt(alert(tempo * 0.9));
+        let semFalemais = 'Valor da ligação sem o plano FaleMais é ' + ((tempo * 0.99)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+        return semFalemais;
       }
     }
   }
   if (origem == 18 && destino == 11) {
     // plano FaleMais 30
     if (plano == 30) {
-      if (tempo <= plano) {
-        return alert("você não excedeu os minutos do seu plano");
+      if (tempo <= 30) {
+        let comFaleMais = 'Valor da ligação com o plano é ' + ((0).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       } else if (tempo >= 30) {
-        return parseInt(alert(2.09 * (tempo - plano)));
+        let = comFaleMais = ('Você excedeu os minutos do seu plano (acréscimo de 10% sobre a tarifa normal do minuto). O valor da ligação COM O PLANO FaleMais é ' + (2.09 * (tempo - plano)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       }
     }
 
     // plano FaleMais 60
     if (plano == 60) {
-      if (tempo <= plano) {
-        return alert("você não excedeu os minutos do seu plano");
+      if (tempo <= 60) {
+        let comFaleMais = 'Valor da ligação com o plano é ' + ((0).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       } else if (tempo >= 60) {
-        return parseInt(alert(2.09 * (tempo - plano)));
+        let = comFaleMais = ('Você excedeu os minutos do seu plano (acréscimo de 10% sobre a tarifa normal do minuto). O valor da ligação COM O PLANO FaleMais é ' + (2.09 * (tempo - plano)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       }
+      return comFaleMais;
     }
     // plano FaleMais 120
     if (plano == 120) {
-      if (tempo <= plano) {
-        return alert("você não excedeu os minutos do seu plano");
+      if (tempo <= 120) {
+        let comFaleMais = 'Valor da ligação com o plano é ' + ((0).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       } else if (tempo >= 120) {
-        return parseInt(alert(2.09 * (tempo - plano)));
+        let = comFaleMais = ('Você excedeu os minutos do seu plano (acréscimo de 10% sobre a tarifa normal do minuto). O valor da ligação COM O PLANO FaleMais é ' + (2.09 * (tempo - plano)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'}));
+        return comFaleMais;
       }
+      return comFaleMais;
     }
 
     // calculo sem o plano
     if (plano == 1) {
       if (tempo >= 20) {
-        return parseInt(alert(tempo * 1.9));
+        let semFalemais = 'Valor da ligação sem o plano FaleMais é ' + ((tempo * 2.09)).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+        return semFalemais;
       }
     }
   }
 };
 
 const calcular = function () {
-  document.getElementById("resultado").innerHTML = "inserir texto";
+  document.getElementById("resultado").innerHTML =
+    "" + faleMais();
 };
