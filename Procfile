@@ -1,1 +1,0 @@
-web: javascript index.html
