@@ -1,6 +1,6 @@
 
 <h1 align="center">  
-  <img src="https://github.com/euhenriquefranca/telzir-telefonia/blob/master/img.png" width="70%"/>
+  <img src="https://github.com/euhenriquefranca/telzir-telefonia/blob/master/public/src/styles/img.png" width="70%"/>
 </h1>
 
 ## :rocket: Tecnologias utilizadas:
