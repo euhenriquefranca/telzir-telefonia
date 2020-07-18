@@ -10,7 +10,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="/public/src/styles/style.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
 
     <label class="my-1 mr-2">Origem</label>
 
-    <select id="origem" onclick="faleMais()" class="custom-select my-1 mr-sm-2 mb-2">
+    <select id="origem" class="custom-select my-1 mr-sm-2 mb-2" onclick="faleMais()">
       <option selected>escolha a origem...</option>
       <option value="11">011</option>
       <option value="16">016</option>
@@ -28,7 +28,7 @@
 
     <label class="my-1 mr-2">Destino</label>
 
-    <select id="destino" onclick="faleMais()" class="custom-select my-1 mr-sm-2">
+    <select id="destino" class="custom-select my-1 mr-sm-2" onclick="faleMais()">
       <option selected>escolha o destino...</option>
       <option value="11">011</option>
       <option value="16">016</option>
@@ -38,7 +38,7 @@
 
     <label class="my-1 mr-2 mt-2" for="inlineFormCustomSelectPref">Plano FaleMais</label>
 
-    <select id="plano" onclick="faleMais()" class="custom-select my-1 mr-sm-2 mb-2" id="inlineFormCustomSelectPref">
+    <select id="plano" class="custom-select my-1 mr-sm-2 mb-2" id="inlineFormCustomSelectPref" onclick="faleMais()">
       <option selected>escolha seu plano...</option>
       <option value="1">Sem FaleMais</option>
       <option value="30">FaleMais 30</option>
@@ -48,7 +48,7 @@
 
     <label class="my-1 mr-2">Tempo</label>
 
-    <select id="tempo" onclick="faleMais()" class="custom-select my-1 mr-sm-2">
+    <select id="tempo" class="custom-select my-1 mr-sm-2" onclick="faleMais()">
       <option selected>escolha os minutos...</option>
       <option value="20">20</option>
       <option value="80">80</option>
@@ -56,7 +56,7 @@
       <option value="200">200</option>
     </select>
 
-    <button type="button" name="" id="" onclick="calcular()"
+    <button type="button" name="calcular" id="" onclick="calcular()"
       class="btn btn-primary mt-3 btn-lg btn-block">Calcular</button>
 
     <div class="mt-4" id="resultado"></div>
@@ -64,6 +64,8 @@
   </div>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="/js/main.js"></script>
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -73,7 +75,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
-  <script src="/public/src/main.js"></script>
 </body>
 
 </html>

@@ -279,3 +279,5 @@ const calcular = function () {
   document.getElementById("resultado").innerHTML =
     "" + faleMais();
 };
+
+
