@@ -16,10 +16,59 @@
 <body>
   <div class="container text-center mt-2">
 
-    <label class="my-1 mr-2">Origem</label>
+    <form>
+      <div class="form-group">
+        <div class="form-group">
+          <label for="exampleInputPassword1">Origem</label>
+          <select id="origem" class="browser-default custom-select">
+            <option selected>Escolha o DDD de origem...</option>
+            <option value="11">011</option>
+            <option value="16">016</option>
+            <option value="17">017</option>
+            <option value="18">018</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Destino</label>
+          <select id="destino" class="browser-default custom-select">
+            <option selected>Escolha o DDD de destino...</option>
+            <option value="11">011</option>
+            <option value="16">016</option>
+            <option value="17">017</option>
+            <option value="18">018</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Plano FaleMais </label>
+          <select id="plano" class="browser-default custom-select">
+            <option selected>escolha seu plano...</option>
+            <option value="30">FaleMais 30</option>
+            <option value="60">FaleMais 60</option>
+            <option value="120">FaleMais 120</option>
+            <option value="1">Sem plano</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Tempo </label>
+          <select id="tempo" class="browser-default custom-select">
+            <option selected>Escolha os minutos da ligação...</option>
+            <option value="20">20min</option>
+            <option value="80">80min</option>
+            <option value="100">100min</option>
+            <option value="200">200min</option>
+          </select>
+        </div>
 
-    <select id="origem" class="custom-select my-1 mr-sm-2 mb-2" onclick="faleMais()">
-      <option selected>escolha a origem...</option>
+        <button type="submit" class="btn btn-primary" onclick="valueSelect()">Enviar</button>
+    </form>
+    <div class="mt-3" id="resultado"></div>
+
+
+    <!-- TODO: This is for server side, there is another version for browser defaults -->
+    <!-- <label class="my-1 mr-2">Origem</label>
+
+    <select id="origem" class="custom-select my-1 mr-sm-2 mb-2">
+      <option selected>escolha o DDD de origem...</option>
       <option value="11">011</option>
       <option value="16">016</option>
       <option value="17">017</option>
@@ -27,9 +76,10 @@
     </select>
 
     <label class="my-1 mr-2">Destino</label>
+    
 
-    <select id="destino" class="custom-select my-1 mr-sm-2" onclick="faleMais()">
-      <option selected>escolha o destino...</option>
+    <select id="destino" class="custom-select my-1 mr-sm-2">
+      <option selected>escolha o DDD de destino...</option>
       <option value="11">011</option>
       <option value="16">016</option>
       <option value="17">017</option>
@@ -38,9 +88,9 @@
 
     <label class="my-1 mr-2 mt-2" for="inlineFormCustomSelectPref">Plano FaleMais</label>
 
-    <select id="plano" class="custom-select my-1 mr-sm-2 mb-2" id="inlineFormCustomSelectPref" onclick="faleMais()">
+    <select id="plano" class="custom-select my-1 mr-sm-2 mb-2" id="inlineFormCustomSelectPref">
       <option selected>escolha seu plano...</option>
-      <option value="1">Sem FaleMais</option>
+      <option value="1">Não tenho plano</option>
       <option value="30">FaleMais 30</option>
       <option value="60">FaleMais 60</option>
       <option value="120">FaleMais 120</option>
@@ -48,7 +98,7 @@
 
     <label class="my-1 mr-2">Tempo</label>
 
-    <select id="tempo" class="custom-select my-1 mr-sm-2" onclick="faleMais()">
+    <select id="tempo" class="custom-select my-1 mr-sm-2">
       <option selected>escolha os minutos...</option>
       <option value="20">20</option>
       <option value="80">80</option>
@@ -56,25 +106,16 @@
       <option value="200">200</option>
     </select>
 
-    <button type="button" name="calcular" id="" onclick="calcular()"
-      class="btn btn-primary mt-3 btn-lg btn-block">Calcular</button>
+    <button type="submit" id="meu-submit" value="Enviar" class="btn btn-primary mt-3">Veja o valor da
+      ligação!</button>
 
-    <div class="mt-4" id="resultado"></div>
+    <div class="mt-4" id="resultado"></div> -->
 
   </div>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="/js/main.js"></script>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>
