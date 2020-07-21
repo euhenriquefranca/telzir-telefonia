@@ -7,62 +7,62 @@ function valueSelect() {
   const valuePlano = parseInt(document.getElementById("plano").value);
   const valueTempo = parseInt(document.getElementById("tempo").value);  
 
-  if (valueOrigem == 11 && valueDestino == 16 && valuePlano >= valueTempo) {
+  if (valueOrigem == 11 && valueDestino == 16 || valueDestino == 11 && valuePlano >= valueTempo) {
     let resultado = 0.0.toLocaleString("pt-br", { style: "currency", currency: "BRL" });
     printValueText(resultado);
-  } else if (valueOrigem == 16 && valueDestino == 11 && valuePlano < valueTempo) {
+  } else if (valueOrigem == 16 && valueDestino == 11 || valueDestino == 16 && valuePlano < valueTempo) {
     let resultado = calculo(valuePlano, valueTempo, tarifas[1]);
     printValueText(resultado);
   } else if (valueOrigem == 11 && valueDestino == 17 && valuePlano < valueTempo) {
     let resultado = calculo(valuePlano, valueTempo, tarifas[2]);
     printValueText(resultado);
-  } else if (valueOrigem == 17 && valueDestino == 11 && valuePlano < valueTempo) {
+  } else if (valueOrigem == 17 && valueDestino == 11 || valueDestino == 17 && valuePlano < valueTempo) {
     let resultado = calculo(valuePlano, valueTempo, tarifas[3]);
     printValueText(resultado);
   } else if (valueOrigem == 11 && valueDestino == 18 && valuePlano < valueTempo) {
     let resultado = calculo(valuePlano, valueTempo, tarifas[4]);
     printValueText(resultado);
-  } else if (valueOrigem == 18 && valueDestino == 11 && valuePlano < valueTempo) {
+  } else if (valueOrigem == 18 && valueDestino == 11 || valueDestino == 18 && valuePlano < valueTempo) {
     let resultado = calculo(valuePlano, valueTempo, tarifas[5]);
     printValueText(resultado);
   } 
   
-  if (valueOrigem == 11 && valueDestino == 16 && valuePlano < valueTempo) {
+  if (valueOrigem == 11 && valueDestino == 16 || valueDestino == 11 && valuePlano < valueTempo) {
     let resultado = calculo(valueTempo, valuePlano, tarifasJuros[0]);
     printValueText(resultado);
-  } else if (valueOrigem == 16 && valueDestino == 11 && valuePlano < valueTempo) {
+  } else if (valueOrigem == 16 && valueDestino == 11 || valueDestino == 16 && valuePlano < valueTempo) {
     let resultado = calculo(valueTempo, valuePlano, tarifasJuros[1]);
     printValueText(resultado);
   } else if (valueOrigem == 11 && valueDestino == 17 && valuePlano < valueTempo) {
     let resultado = calculo(valueTempo, valuePlano, tarifasJuros[2]);
     printValueText(resultado);
-  } else if (valueOrigem == 17 && valueDestino == 11 && valuePlano < valueTempo) {
+  } else if (valueOrigem == 17 && valueDestino == 11 || valueDestino == 17 && valuePlano < valueTempo) {
     let resultado = calculo(valueTempo, valuePlano, tarifasJuros[3]);
     printValueText(resultado);
   } else if (valueOrigem == 11 && valueDestino == 18 && valuePlano < valueTempo) {
     let resultado = calculo(valueTempo, valuePlano, tarifasJuros[4]);
     printValueText(resultado);
-  } else if (valueOrigem == 18 && valueDestino == 11 && valuePlano < valueTempo) {
+  } else if (valueOrigem == 18 && valueDestino == 11 || valueDestino == 18 && valuePlano < valueTempo) {
     let resultado = calculo(valueTempo, valuePlano, tarifasJuros[5]);
     printValueText(resultado);
   }   
 
-  if (valueOrigem == 11 && valueDestino == 16) {
+  if (valueOrigem == 11 && valueDestino == 16 || valueDestino == 11) {
     let resultado = calculoSemPlano(valueTempo, tarifas[0]);
     printSemPlano(resultado);
-  } else if (valueOrigem == 16 && valueDestino == 11) {
+  } else if (valueOrigem == 16 && valueDestino == 11 || valueDestino == 16) {
     let resultado = calculoSemPlano(valueTempo, tarifas[1]);
     printSemPlano(resultado);
   } else if (valueOrigem == 11 && valueDestino == 17) {
     let resultado = calculoSemPlano(valueTempo, tarifas[2]);
     printSemPlano(resultado);
-  } else if (valueOrigem == 17 && valueDestino == 11) {
+  } else if (valueOrigem == 17 && valueDestino == 11 || valueDestino == 17) {
     let resultado = calculoSemPlano(valueTempo, tarifas[3]);
     printSemPlano(resultado);
   } else if (valueOrigem == 11 && valueDestino == 18) {
     let resultado = calculoSemPlano(valueTempo, tarifas[4]);
     printSemPlano(resultado);
-  } else if (valueOrigem == 18 && valueDestino == 11) {
+  } else if (valueOrigem == 18 && valueDestino == 11 || valueDestino == 18) {
     let resultado = calculoSemPlano(valueTempo, tarifas[5]);
     printSemPlano(resultado);
   } 
