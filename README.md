@@ -23,4 +23,4 @@ O cliente escolhe os códigos das cidades de origem e destino, o tempo da ligaç
 5. No navegador, digite `http://localhost:3000`
 
 ------------------
-Feito com :black_heart: by [Henrique França](https://www.linkedin.com/in/euhenriquefranca/)
+Feito por [Henrique França](https://www.linkedin.com/in/euhenriquefranca/)
