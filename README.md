@@ -11,8 +11,16 @@
 - [Express](https://expressjs.com/pt-br/)
 
 ## :bookmark: Sobre
-Página na web onde o cliente pode calcular o valor da ligação.
-O cliente escolhe os códigos das cidades de origem e destino, o tempo da ligação em minutos e também pode escolher qual o plano.
+Com o novo produto FaleMais da Telzir o cliente adquire um plano e pode falar de graça até
+um determinado tempo (em minutos) e só paga os minutos excedentes. Os minutos
+excedentes tem um acréscimo de 10% sobre a tarifa normal do minuto. Os planos são
+FaleMais 30 (30 minutos), FaleMais 60 (60 minutos) e FaleMais 120 (120 minutos).
+
+A Telzir, preocupada com a transparência junto aos seus clientes, quer disponibilizar uma
+página na web onde o cliente pode calcular o valor da ligação. Ali, o cliente pode escolher os
+códigos das cidades de origem e destino, o tempo da ligação em minutos e escolher qual o
+plano FaleMais. O sistema deve mostrar dois valores: (1) o valor da ligação com o plano e (2)
+sem o plano. 
 
 💻 Começando:
 ------------------
